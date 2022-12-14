@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #1e1f26;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar
+{
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    z-index: 2;
+    background-color: #1e1f2600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.navbar.sticky
+{
+    background-color: rgb(10, 10, 29);
+}
+
+.logo h1 a
+{
+    color: white;
+}
+
+.nav-item
+{
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-item a
+{
+    color: white;
+    font-weight: 500;
+    font-size: 1.125rem;
+    transition: 0.5s;
+}
+
+.nav-item a:hover 
+{
+    color: lightskyblue;
+}
+
+.main
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+section
+{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.home
+{
+    background-image: url(/assets/backgrounds/background-home-blur.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home .overview
+{
+    max-width: 700px;
+    padding: 10px;
+}
+
+.overview h1
+{
+    font-size: 4rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+    color: white;
+}
+
+.overview h1 span
+{
+    text-shadow: 0.2px 0.2px black;
+}
+
+.overview p
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #161515;
+    margin-bottom: 20px;
+}
+
+.btn-discord
+{
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: lightskyblue;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn-discord:hover
+{
+    background-color: rgba(135, 206, 250, 0.747);
+    color: rgba(255, 255, 255, 0.747);
+}
+
+.features
+{
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+}
+
+.card-group
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card
+{
+    width: 280px;
+    height: 370px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.card #icon
+{
+    position: relative;
+    top: -35px;
+    width: 80px;
+    transition: 0.5s;
+}
+
+.card:hover #icon 
+{
+    transform: rotate(360deg);
+}
+
+.card p
+{
+    padding: 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    body
+    {
+        overflow: auto;
+    }
+    
+    .logo h1 a
+    {
+        font-size: 20px;
+    }
+
+    .nav-item a
+    {
+        font-size: 12px;
+    }
+
+    .overview h1
+    {
+        font-size: 3rem;
+    }
+    .overview p 
+    {
+        font-size: 1.2rem;
+    }
+
+    .features
+    {
+        height: 100%;
+    }
+    
+    .card-group 
+    {
+        flex-direction: column;
+    }
+
+    .card
+    {
+        width: 260px;
+        height: 350px;
+    }
+}
+
+.footer
+{
+    background-color: rgb(10, 10, 29);
+    border-top: solid 20px white;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer p 
+{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer a
+{
+    color: lightskyblue;
+}
+
+.footer a:hover
+{
+    text-decoration: underline;
+}
+
+.more 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.socials ion-icon
+{
+    font-size: 30px;
+}
+
+@media (max-width: 800px) {
+    .footer a
+    {
+        font-size: 13px;
+    }
+
+    .footer p
+    {
+        font-size: 13px;
+    }
+
+    .socials ion-icon 
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer a 
+    {
+        font-size: 10px;
+    }
+        
+    .footer p 
+    {
+        font-size: 10px;
+    }
+        
+    .socials ion-icon 
+    {
+        font-size: 15px;
+            
+    }
+}
