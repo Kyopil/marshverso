@@ -41,6 +41,7 @@ body
 .logo h1 a
 {
     color: white;
+    text-transform: uppercase;
 }
 
 .nav-item
