@@ -83,7 +83,7 @@ section
 
 .home
 {
-    background-image: url(/assets/backgrounds/background-home-blur.jpg);
+    background-image: url(https://kyopil.github.io/marshverso/assets/backgrounds/background-home-blur.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
